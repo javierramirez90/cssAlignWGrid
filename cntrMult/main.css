@@ -1,0 +1,38 @@
+body, html {
+    margin: 0;
+    height: 100%;
+    font-family: 'Arial';
+}
+
+/* (1)
+    body { 
+    display: grid;
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: center;
+} */
+
+/* with the past configuration(1) we align the elements in the center */
+
+/* If instead of columns we want to align the elements on the same row, we use (2) config. */
+
+body {
+    margin: 0;
+
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(3,auto);
+    grid-template-areas: 
+        "item1 item2 item3";
+
+    justify-items: center;
+    align-items: center;
+}
+
+.container {
+    /* grid-column-start: 1; (2) */
+
+    background: rgb(230, 230, 230);
+    border-radius: 10px;
+    padding: 1em;
+}
