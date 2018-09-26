@@ -9,19 +9,25 @@ body {
 
     display: grid;
     grid-template-rows: auto 50px;
+    grid-template-columns: 12% auto;
     grid-template-areas:
-        "content"
-        "footer";
+        "sidebar content"
+        "footer footer";
+}
+
+aside {
+    grid-area: sidebar;
+    background-color: coral;
 }
 
 .content {
-    grid-area: "content";
+    grid-area: content;
     justify-self: center;
     align-self: center;
 }
 
 footer {
-    grid-area: "footer";
+    grid-area: footer;
     background-color: lightgray;
     padding: 10px;
 }
