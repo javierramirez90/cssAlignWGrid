@@ -21,7 +21,7 @@ body {
 }
 
 #item2 {
-    grid-area: item2;
+    grid-area: item2;   
     justify-self: start; /* aligns horizontally*/
     align-self: end; /* aligns vertically */
 }

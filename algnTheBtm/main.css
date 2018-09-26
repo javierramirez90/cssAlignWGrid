@@ -1,0 +1,27 @@
+body, html {
+    margin: 0;
+    height: 100%;
+    font-family: 'Arial';
+}
+
+body {
+    margin: 0;
+
+    display: grid;
+    grid-template-rows: auto 50px;
+    grid-template-areas:
+        "content"
+        "footer";
+}
+
+.content {
+    grid-area: "content";
+    justify-self: center;
+    align-self: center;
+}
+
+footer {
+    grid-area: "footer";
+    background-color: lightgray;
+    padding: 10px;
+}
